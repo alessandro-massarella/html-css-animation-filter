@@ -162,8 +162,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition: all 5s;
-    transition-timing-function: ease-in-out;
+    transition: 2s;
+    transition-timing-function: ease;
 
 }
 
@@ -171,15 +171,25 @@
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
-    right: 20%;
+    right: 10%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition:  2s;
+    transition-timing-function: ease;
+
 }
 
 
-.ex-12-top-white:hover{
+.ex-12-button:hover .ex-12-top-white {
   position: absolute;
   top: -10px;
   left: 60%;
+
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  position: absolute;
+  bottom: -10px;
+  right: 60%;
 }
