@@ -155,27 +155,27 @@
     text-decoration: none;
 }
 
-.ex-12-top-white, .ex-13-top-white {
+.ex-12-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition: 2s;
+    transition: 0.5s;
     transition-timing-function: ease;
 
 }
 
 
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-12-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 10%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition:  2s;
+    transition:  0.5s;
     transition-timing-function: ease;
 
 }
@@ -185,11 +185,60 @@
   position: absolute;
   top: -10px;
   left: 60%;
-
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
   position: absolute;
   bottom: -10px;
   right: 60%;
+}
+
+
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: top-to-top;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+}
+@keyframes top-to-top {
+  0% {transform: translate(0px, 0px);}
+  20% { transform: translate(120px, 0px);}
+  40% { transform: translate(120px, 60px);}
+  60% { transform: translate(-30px, 60px);}
+  80% { transform: translate(-30px, 0px);}
+  100% { transform: translate(0px, 0px);}
+}
+
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: bottom-to-bottom;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+}
+@keyframes bottom-to-bottom {
+  0% { bottom: -10px; right: 10%;}
+  20% { bottom: -10px; right: 100%;}
+  40% { bottom: 60px; right: 100%;}
+  60% { bottom: 60px; right: -10%;}
+  80% { bottom: -10px; right: -10%;}
+  100% { bottom: -1  0px; right: 10%;}
 }
